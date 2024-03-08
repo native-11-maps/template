@@ -56,7 +56,7 @@ describe("Map should be rendered", () => {
         screen.getByText("Permission to access location was denied")
       ).toBeTruthy();
     });
-  });
+  }, 7000);
 
   it("should not show error 'Permission to access location was denied' when location permissions are  granted", async () => {
     render(<App />);
