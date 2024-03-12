@@ -8,7 +8,7 @@ Develop a React Native application that integrates with the expo-location librar
 
 ### Displaying the User Current Location
 
-1. Request and obtain user permission to access their current location using `expo-location`.
+1. Request and obtain user permission to access their current location using `requestForegroundPermissionsAsync` from `expo-location`.
 2. Use `react-native-maps` to retrieve and display the user's current location on the map.
 3. On the first render, animate the map's view to center on the user's current location. Set the initial zoom level to `ZOOM_LEVEL = 15`. Ensure this animation is smooth, with an animation duration of `ANIMATION_DURATION = 2000` milliseconds.
 4. Incorporate a built-in button from MapView that allows users to re-center the map on their current location whenever it is moved away.
