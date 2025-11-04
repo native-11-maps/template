@@ -16,6 +16,11 @@ const mockCorrectAddress = "New Address";
 const mockIncorrectAddress = "InCorrectAddres";
 
 jest.mock("expo-location", () => ({
+  PermissionStatus: {
+    GRANTED: "granted",
+    UNDETERMINED: "undetermined",
+    DENIED: "denied",
+  },
   requestForegroundPermissionsAsync: jest.fn(() =>
     Promise.resolve({ status: "granted" })
   ),
